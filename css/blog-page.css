@@ -1,3 +1,47 @@
+         /* breadcrambs */
+
+   /*  blog page */
+   .page-head{
+    width: 100%;
+    background-color: #f9f9f9;
+    padding-top:70px ;
+ }
+ 
+ .text-page{
+    width: 60%;
+    float: left;
+    color: black;
+    font-size:  30px;
+    text-transform: capitalize;
+    padding: 50px 0;
+    margin-right: auto;
+ }
+
+ .bread-crumbs{
+    width: 40%;
+    list-style: none;
+    float: left;
+    padding: 60px 0;
+
+ }
+ .bread-crumbs li {
+    display: inline-block;
+    color: #999;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 0 5px;
+    
+ }
+ .bread-crumbs li a{
+    text-decoration: none;
+    color: #7ba7ff
+ }
+
+ .bread-crumbs li + li ::before{
+ content:"/" ;
+ padding-right:10px ;
+}
+
 /* blog-page */
 
 .blog-page-content{
