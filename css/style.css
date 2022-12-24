@@ -1,0 +1,94 @@
+
+
+
+
+/*common المتشابهات*/
+   /* 
+         container
+         1- opacity hover
+         2- section header 
+         3- section padding
+         4- hover effect 1 { left to right }
+         5- hover effect 2 { top to bottom }
+     */
+
+     /* general sections */
+
+      .pd-y{
+         padding: 100px;
+      }
+      
+      .section-header{
+         text-align: center;
+         margin-bottom:  25px; 
+      }
+      .section-header .section-title{
+         font-size: 35px;
+         text-transform: capitalize;
+         margin-bottom:  10px; 
+      }
+
+      .section-header .line{
+         display: block;
+         height: 5px;
+         width: 60px;
+         margin: 0 auto 70px auto;
+         background-color: #6195ff;
+      }
+
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box; /*css3*/
+      }
+         .hover-opacity{
+      transition :opacity 0.5s;
+      }
+
+      .hover-opacity:hover{
+      opacity: 0.7;
+      }
+
+      li{
+         list-style: none;
+      }
+
+/* hover effect 1 [ltr-effect]
+hover effect 2 [ tb-effect ] */
+
+.ltr-effect ,
+.tb-effect{
+   position: relative;
+}
+
+.ltr-effect::after ,
+.tb-effect::after{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:#333;
+      z-index: -1;
+   }
+   .tb-effect::after{
+      width: 100%;
+      height: 0;
+      transition: height 0.5s ;
+
+   }
+   .ltr-effect::after{
+      width: 0;
+      transition: width 0.5s ;
+   }
+   
+   .ltr-effect:hover::after{
+      width: 100%;
+      
+   }
+      
+      .tb-effect:hover::after{
+         height: 100%; 
+      } 
+         

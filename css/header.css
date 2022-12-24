@@ -1,0 +1,95 @@
+/* header */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0,0.4);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+body{
+font-family: 'varela round', sans-serif;
+}
+/* nav bar */
+.header .logo {
+    width: 40%;
+    float: left;
+}
+
+    .header .logo img{
+    width: 25%;
+    margin-top: 13px;
+}
+
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+    
+}
+.header .nav > li {
+    display: inline-block;
+    text-align: right;
+}
+
+.header .nav > li >a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 30px 15px; 
+}
+
+ /*dropdown */
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color:#6195ff ;
+    width: 150px;
+    text-align: center;
+    left: -50%;
+    top: 70%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ,visibility 0.5s ;
+}
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    
+}
+ /* nav hover */
+.header .nav > li a::after,
+.header .nav > li a.active::after {
+    content: "";
+    height: 3px;
+    margin-top:2px ;
+    background-color: #6195ff;
+    transition: width 0.5s;
+    display: block;
+}
+.header .nav > li >a.active::after{
+    width: 100%;
+    }
+    .header .nav > li > a::after{
+    width: 0;
+    }
+    .header .nav > li > a:hover:after{
+    width: 100%;
+    }
+    
+    
+    .clear {
+    clear: both;
+    }

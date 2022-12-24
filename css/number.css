@@ -1,0 +1,30 @@
+     /* number section */
+    .numbers{
+        position: relative;
+        background-image: url(../images/background/background2.webp);
+        height: 300px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .numbers-items{
+        overflow: hidden;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .number-item{
+        width: 25%;
+        float: left;
+    }
+    .number-icon{
+        margin-bottom: 20px;
+        color: #6195ff;
+    }
+    .number-item-title{
+        font-weight: bold;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .number-item-text{
+        color: #f9f9f9;
+    }
